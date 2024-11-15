@@ -9,3 +9,5 @@ Does the following
 4. Delete Tasks.
 
 Also performs network calls using Axios to keep data stored in Backend
+
+To start type - npm start 
