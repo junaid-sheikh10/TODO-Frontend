@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TodoWrapper from './components/TodoWrapper'
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='rounded-xl border-solid min-h-1/2
+     border-2 border-black w-1/2 m-auto p-3 mt-2'>
+        <div>
+        <h1 className='font-bold'>TODO APP</h1>
+        <p className='text-red-600'>write your tasks for today !</p>
+        </div>
+       
+        <TodoWrapper></TodoWrapper>
+        
     </div>
-  );
+  )
 }
 
-export default App;
+
+
+
+
+
+export default App
